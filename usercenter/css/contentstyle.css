@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* user center content style */
+.main-info {
+    border-bottom: 1px #dddcdc solid;
+    overflow: hidden;
+}
+
+.user-info {
+    display: inline-block;
+    width: 50%;
+    height: 155px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.user-head img {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
+    /*
+    padding: 5px;
+    border: 1px #e9e7e7 solid;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; */
+}
+
+.user-name {
+    margin-top: 20px;
+}
+
+.link {
+    display: block;
+    margin-top: 20px;
+    color: #40a9e0;
+    font-size: 14px;
+}
+
+.account-info {
+    width: 50%;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+.bind-button {
+    display: inline-block;
+    width: 100px;
+    line-height: 30px;
+    margin-left: 20px;
+    background: #40a9e0;
+    color: #ffffff;
+    text-align: center;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+.bind-button:hover {
+    background: #dfdfdf;
+    color: #0da4d3;
+}
+
+.account-info .level-1 {
+    color: #ff8900;
+}
+
+.sub-info {
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.sub-info li{
+    width: 50%;
+    height: 100px;
+    margin-bottom: 40px;
+    float: left;
+}
+
+.icon img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.sub-info h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* my post content style */
+
+.post-category {
+    padding-bottom: 20px;
+    border-bottom: 1px #dddcdc solid;
+    overflow: hidden;
+}
+.border-top {
+    border-top: 1px #dddcdc solid;
+}
+.post-category li {
+    float: left;
+    padding: 0 12px;
+    border-right: 1px #dddcdc solid;
+}
+
+.list-item {
+    padding: 20px;
+    border-bottom: 1px #dddcdc solid;
+}
+
+.item-content {
+    display: inline-block;
+    width: 600px;
+    height: auto;
+    color: #666666;
+}
+
+.item-title {
+    display: block;
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre;
+}
+
+.item-time {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.item-info {
+    display: inline-block;
+    margin-top: 24px;
+    text-align: right;
+}
+
+.item-info li {
+    float: left;
+    padding: 0 10px;
+    border-right: 1px #dddcdc solid;
+}
+
+.post-category li:last-child, .item-info li:last-child {
+    border: none;
+}
+
+/* page number */
+.page-num{
+    margin-top: 40px;
+    overflow: hidden; 
+}
+.page-num ul{
+    float: right;
+    margin-right: 50px;    
+}
+.page-num li{
+    float: left;
+    margin-right: 5px;
+}
+.page-num li a{
+    display: block;
+    width: 28px;
+    line-height: 28px;
+    background: #eeeeee;
+    border: 1px #d0d0d0 solid;
+    color: #333333;
+    text-align: center;
+    transition: background 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+}
+.page-num li a:hover, .page-num li .current{
+    background: #0da4d3;
+    color: #fff;
+    border-color: #0da4d3;
+}
+
+/* my message content style */
+.del-item {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../images/icon-fork.png") no-repeat;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: -webkit-transform .5s;
+    -moz-transition: -moz-transform .5s;
+    -ms-transition: -ms-transform .5s;
+    -o-transition: -o-transform .5s;
+    transition: transform .5s;
+}
+.del-item:hover {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* change my information style */
+
+.content-info{
+    margin-top: 40px;
+    padding: 0 20px;
+    font-size: 16px;
+}
+.content-info li{
+    margin-bottom: 20px;
+}
+.content-info li > span{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 20px;
+}
+.content-info li > span:nth-child(2){text-align: left;}
+.content-info input, .content-info textarea{
+    outline: none;
+}
+.content-info li label{
+    margin-right: 5px;
+}
+.content-info .input-box{
+    width: 200px;
+    line-height: 30px;
+}
+.content-info .input-box:focus{
+    outline: 2px #0da4d3 solid;
+}
+.content-info .text-area{
+    width: 400px;
+    height: 80px;
+    line-height: 1.5;
+}
+
+
+.content-info .confirm-btn{
+    display: inline-block;
+    width: 120px;
+    line-height: 40px;
+    margin-left: 124px;
+    background: #0da4d3;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+}
+
+
+
+
+
+
